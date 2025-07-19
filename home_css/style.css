@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: center;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+header {
+    background: linear-gradient(to left);
+    color: rgb(244, 9, 9);
+    text-align: center;
+    padding: 20px;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+p,.par {
+    text-align: center;
+}
+par{
+    color: rgb(244, 9, 9);
+}
+/* Red text utility class */
+.red {
+    color: red;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0c0c0c;
+}
+ul {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+
+}
+ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+img {
+    max-width: 100%;
+    height: 350px;
+    display: block;
+    margin: 20px auto;
+}
+.button{
+    display: block;
+    width: fit-content;
+    padding: 10px 70px;
+    background-color: #f40606;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+}
+.button:hover {
+    background-color: #3f0d0d;
+}
+h3 {
+    color: rgb(244, 9, 9);
+}
+.inline {
+    display: inline;
+    margin: center;
+    text-align: center;
+    
+}
+.body-card {
+    flex-wrap: wrap;
+    background-color: rgb(20, 19, 19);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 40px auto 100px auto;
+    padding: 20px;
+}
