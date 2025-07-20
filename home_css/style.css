@@ -14,11 +14,12 @@ header {
 h1, h2, h3 {
     text-align: center;
 }
-p,.par {
+p {
     text-align: center;
 }
-par{
+.par{
     color: rgb(244, 9, 9);
+    text-align: center;
 }
 /* Red text utility class */
 .red {
@@ -47,12 +48,13 @@ ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
     font-weight: bold;
 }
 ul li a:hover {
     background-color: #444;
     border-radius: 5px;
+    color: rgb(255, 68, 68);
 }
 img {
     max-width: 100%;
