@@ -14,6 +14,11 @@ body {
     padding: 0 20px;
     background-color: #0c0c0c;
     transition: box-shadow 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header-container:hover {
