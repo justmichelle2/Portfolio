@@ -131,11 +131,15 @@ ul li a:active::after {
     max-width: 960px;
     margin: 40px auto;
     border-radius: 20px;
-    border: 1px solid rgb(180, 70, 70);
+    border: 1px solid rgb(180, 70, 70, 0.25);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
     background-color: #1c1b1b;
     transition: box-shadow 0.3s ease;
     overflow: hidden;
+}
+.profile:hover {
+    transform: translateY(-2px);
+    border: 1.1px solid rgb(180, 70, 70);
 }
 
 .profile::before {
@@ -242,7 +246,7 @@ ul li a:active::after {
     max-width: 960px;
     margin: 40px auto;
     border-radius: 20px;
-    border: 1px solid rgb(180, 70, 70);
+    border: 1px solid rgb(180, 70, 70, 0.25);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
     background-color: #1c1b1b;
     transition: box-shadow 0.3s ease;
@@ -250,8 +254,8 @@ ul li a:active::after {
 }
 
 .achievements:hover {
-    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
     transform: translateY(-2px);
+    border: 1.1px solid rgb(180, 70, 70);
 }
 
 .achievements-title {
@@ -306,11 +310,15 @@ ul li a:active::after {
     max-width: 960px;
     margin: 40px auto;
     border-radius: 20px;
-    border: 1px solid rgb(180, 70, 70);
+    border: 1px solid rgb(180, 70, 70, 0.25);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
     background-color: #1c1b1b;
     transition: box-shadow 0.3s ease;
     overflow: hidden;
+}
+.education:hover {
+    transform: translateY(-2px);
+    border: 1.1px solid rgb(180, 70, 70);
 }
 
 .education::before {
@@ -337,10 +345,7 @@ ul li a:active::after {
     transform: translateY(-2px);
 }
 
-.education:hover {
-    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
-    transform: translateY(-2px);
-}
+
 
 .education-title {
     color: rgb(200, 80, 80);
@@ -371,11 +376,15 @@ ul li a:active::after {
     max-width: 960px;
     margin: 40px auto;
     border-radius: 20px;
-    border: 1px solid rgb(180, 70, 70);
+    border: 1px solid rgb(180, 70, 70, 0.25);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
     background-color: #1c1b1b;
     transition: box-shadow 0.3s ease;
     overflow: hidden;
+}
+.area:hover {
+    transform: translateY(-2px);
+    border: 1.1px solid rgb(180, 70, 70);
 }
 
 .area::before {
@@ -402,10 +411,7 @@ ul li a:active::after {
     transform: translateY(-2px);
 }
 
-.area:hover {
-    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
-    transform: translateY(-2px);
-}
+
 
 .area-title {
     color: rgb(200, 80, 80);
