@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -234,15 +235,18 @@ ul li a:active::after {
     padding: 20px;
 }
 
+
 .achievements {
+    position: relative;
     padding: 30px;
     max-width: 960px;
     margin: 40px auto;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid rgb(180, 70, 70);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
-    background-color: #0c0c0c;
-    transition: all 0.3s ease;
+    background-color: #1c1b1b;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .achievements:hover {
@@ -271,16 +275,66 @@ ul li a:active::after {
 .achievements-list li:last-child {
     border-bottom: none;
 }
+.achievements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 68, 68, 0.3) 35%, rgba(255, 68, 68, 0.7) 50%, rgba(255, 68, 68, 0.3) 65%, transparent 100%);
+    z-index: 2;
+}
+
+.achievements.flash-right::before {
+    animation: pulseGlowRight 0.4s linear forwards;
+}
+
+.achievements.flash-left::before {
+    animation: pulseGlowLeft 0.4s linear forwards;
+}
+
+.achievements:hover {
+    box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8);
+    transform: translateY(-2px);
+}
+
 
 .education {
+    position: relative;
     padding: 30px;
     max-width: 960px;
     margin: 40px auto;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid rgb(180, 70, 70);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
-    background-color: #0c0c0c;
-    transition: all 0.3s ease;
+    background-color: #1c1b1b;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.education::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 68, 68, 0.3) 35%, rgba(255, 68, 68, 0.7) 50%, rgba(255, 68, 68, 0.3) 65%, transparent 100%);
+    z-index: 2;
+}
+
+.education.flash-right::before {
+    animation: pulseGlowRight 0.4s linear forwards;
+}
+
+.education.flash-left::before {
+    animation: pulseGlowLeft 0.4s linear forwards;
+}
+
+.education:hover {
+    box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8);
+    transform: translateY(-2px);
 }
 
 .education:hover {
@@ -310,15 +364,42 @@ ul li a:active::after {
     border-bottom: none;
 }
 
+
 .area {
+    position: relative;
     padding: 30px;
     max-width: 960px;
     margin: 40px auto;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid rgb(180, 70, 70);
     box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
-    background-color: #0c0c0c;
-    transition: all 0.3s ease;
+    background-color: #1c1b1b;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 68, 68, 0.3) 35%, rgba(255, 68, 68, 0.7) 50%, rgba(255, 68, 68, 0.3) 65%, transparent 100%);
+    z-index: 2;
+}
+
+.area.flash-right::before {
+    animation: pulseGlowRight 0.4s linear forwards;
+}
+
+.area.flash-left::before {
+    animation: pulseGlowLeft 0.4s linear forwards;
+}
+
+.area:hover {
+    box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8);
+    transform: translateY(-2px);
 }
 
 .area:hover {
