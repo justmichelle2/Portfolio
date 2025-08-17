@@ -140,6 +140,7 @@ ul li a:active::after {
 .profile:hover {
     transform: translateY(-2px);
     border: 1.1px solid rgb(180, 70, 70);
+    background-color: #2c2a2a;
 }
 
 .profile::before {
@@ -256,6 +257,7 @@ ul li a:active::after {
 .achievements:hover {
     transform: translateY(-2px);
     border: 1.1px solid rgb(180, 70, 70);
+    background-color: #2c2a2a;
 }
 
 .achievements-title {
@@ -319,6 +321,7 @@ ul li a:active::after {
 .education:hover {
     transform: translateY(-2px);
     border: 1.1px solid rgb(180, 70, 70);
+    background-color: #2c2a2a;
 }
 
 .education::before {
@@ -385,6 +388,7 @@ ul li a:active::after {
 .area:hover {
     transform: translateY(-2px);
     border: 1.1px solid rgb(180, 70, 70);
+    background-color: #2c2a2a;
 }
 
 .area::before {
