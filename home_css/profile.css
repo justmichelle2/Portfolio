@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 80px;
     background-color: black;
     color: white;
 }
@@ -49,6 +50,24 @@ h1, h2, h3 {
     padding: 0;
 }
 
+.head {
+    color: rgb(200, 80, 80);
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 0 2px 4px rgba(200, 80, 80, 0.3);
+}
+
+.par {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+    font-style: italic;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -67,4 +86,190 @@ ul li {
     margin: 0 15px;
     font-size: 16px;
 }
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
 
+ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+    color: rgb(200, 80, 80);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(200, 80, 80, 0.15);
+}
+
+.profile {
+    padding: 30px;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid rgb(180, 70, 70);
+    box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
+    background-color: #0c0c0c;
+    transition: all 0.3s ease;
+}
+
+.profile:hover {
+    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
+    transform: translateY(-2px);
+}
+
+.profile-title {
+    color: rgb(200, 80, 80);
+    font-size: 24px;
+}
+
+.profile-text {
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.achievements {
+    padding: 30px;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid rgb(180, 70, 70);
+    box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
+    background-color: #0c0c0c;
+    transition: all 0.3s ease;
+}
+
+.achievements:hover {
+    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
+    transform: translateY(-2px);
+}
+
+.achievements-title {
+    color: rgb(200, 80, 80);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(200, 80, 80, 0.2);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.achievements-list li:last-child {
+    border-bottom: none;
+}
+
+.education {
+    padding: 30px;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid rgb(180, 70, 70);
+    box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
+    background-color: #0c0c0c;
+    transition: all 0.3s ease;
+}
+
+.education:hover {
+    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
+    transform: translateY(-2px);
+}
+
+.education-title {
+    color: rgb(200, 80, 80);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(200, 80, 80, 0.2);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.education-list li:last-child {
+    border-bottom: none;
+}
+
+.area {
+    padding: 30px;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 8px;
+    border: 1px solid rgb(180, 70, 70);
+    box-shadow: 0 0 10px rgba(180, 70, 70, 0.15);
+    background-color: #0c0c0c;
+    transition: all 0.3s ease;
+}
+
+.area:hover {
+    box-shadow: 0 0 20px rgba(180, 70, 70, 0.25);
+    transform: translateY(-2px);
+}
+
+.area-title {
+    color: rgb(200, 80, 80);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.area-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.area-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(200, 80, 80, 0.2);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.area-list li:last-child {
+    border-bottom: none;
+}
+
+.role {
+    color: rgb(200, 80, 80);
+    font-size: 24px;
+    margin: 30px 0 20px 0;
+}
+
+.role-list {
+    list-style: none;
+    padding: 0;
+}
+
+.role-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(200, 80, 80, 0.2);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.role-list li:last-child {
+    border-bottom: none;
+}

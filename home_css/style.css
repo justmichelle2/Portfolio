@@ -23,7 +23,7 @@ body {
 }
 
 .header-container:hover {
-    box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8), 0 0 15px rgba(255, 68, 68, 0.5);
+    box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8);
 }
 
 .logo {
