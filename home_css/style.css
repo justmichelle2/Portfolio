@@ -86,13 +86,34 @@ ul li a {
     transition: background-color 0.3s ease-in-out;
     font-weight: bold;
     position: relative;
+    overflow: hidden;
 }
-ul li a:hover {
-    background-color: #444;
-    border-radius: 5px;
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+    background-color: #210e0e;
+    border-radius: 20px;
     color: rgb(255, 68, 68);
     transform: translateY(-2px);
-    box-shadow: 0 2px 10px rgba(255, 68, 68, 0.2);
+    box-shadow: 0 2px 10px rgba(28, 25, 25, 0.2);
+}
+ul li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 15px;
+    left: 15px;
+    bottom: 8px;
+    height: 2px;
+    background-color: rgba(255, 68, 68);
+    border-radius: 2px;
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+ul li a:hover::after,
+ul li a:focus::after,
+ul li a:active::after {
+    transform: scale(1);
 }
 img {
     max-width: 100%;
