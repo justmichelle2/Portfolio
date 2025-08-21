@@ -63,7 +63,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 35px;
     padding: 0;
     list-style: none;
 }
@@ -134,15 +134,20 @@ ul li a:active::after {
 
 .card {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
 }
+@media (max-width: 700px) {
+    .card {
+        grid-template-columns: 1fr; 
+    }
+}
 
 .card > div {
-    background-color: #0c0c0c;
+    background-color: #1b1818;
     border: 1px solid rgb(180, 70, 70);
     border-radius: 20px;
     padding: 30px 20px;
@@ -162,10 +167,10 @@ ul li a:active::after {
     background: linear-gradient(90deg, transparent, rgba(255, 68, 68, 0.3) 35%, rgba(255, 68, 68, 0.7) 50%, rgba(255, 68, 68, 0.3) 65%, transparent 100%);
     z-index: 2;
 }
-.card.flash-right::before {
+.card > div.flash-right::before {
     animation: pulseGlowRight 0.4s linear forwards;
 }
-.card.flash-left::before {
+.card > div.flash-left::before {
     animation: pulseGlowLeft 0.4s linear forwards;
 }
 
@@ -173,6 +178,7 @@ ul li a:active::after {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 68, 68, 0.8);
     border-color: 1.5px solid rgb(200, 80, 80);
+    background-color: #2b2525;
 }
 @keyframes pulseGlowRight {
     0% {
@@ -225,10 +231,10 @@ ul li a:active::after {
 }
 
 .field-box {
-    max-width: 800px;
+    max-width: 750px;
     margin: 60px auto 40px auto;
     padding: 40px 30px;
-    background-color: #0c0c0c;
+    background-color: #1c1c1c;
     border: 1px solid rgb(180, 70, 70);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(180, 70, 70, 0.15);
@@ -263,9 +269,9 @@ ul li a:active::after {
 
 .form input,
 .form textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px 15px;
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(41, 40, 40, 0.8);
     border: 2px solid rgba(180, 70, 70, 0.3);
     border-radius: 8px;
     color: white;
@@ -296,7 +302,7 @@ ul li a:active::after {
 
 .submit-btn {
     display: block;
-    width: 100%;
+    width: 30%;
     padding: 15px 20px;
     background-color: rgb(200, 80, 80);
     color: white;
@@ -324,7 +330,7 @@ ul li a:active::after {
     max-width: 600px;
     margin: 60px auto 40px auto;
     padding: 40px 30px;
-    background-color: #0c0c0c;
+    background-color: #1b1b1b;
     border: 1px solid rgb(180, 70, 70);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(180, 70, 70, 0.15);
@@ -348,7 +354,7 @@ ul li a:active::after {
     display: inline-block;
     margin: 0 15px;
     padding: 15px;
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(24, 23, 23, 0.8);
     border: 2px solid rgba(180, 70, 70, 0.3);
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -380,8 +386,8 @@ ul li a:active::after {
 
 /* Specific colors for different social media platforms */
 .link a:nth-child(2):hover {
-    background-color: #1877F2;
-    border-color: #1877F2;
+    background-color: #070707;
+    border-color: #500202;
 }
 
 .link a:nth-child(3):hover {
@@ -390,6 +396,6 @@ ul li a:active::after {
 }
 
 .link a:nth-child(4):hover {
-    background-color: #1DA1F2;
-    border-color: #1DA1F2;
+    background-color: #dc076a;
+    border-color: #151616;
 }
