@@ -367,7 +367,7 @@ ul li a:active::after {
 }
 
 .link a:hover {
-    background-color: rgb(200, 80, 80);
+    background-color: rgb(8, 6, 6);
     border-color: rgb(255, 68, 68);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(200, 80, 80, 0.4);
@@ -384,10 +384,9 @@ ul li a:active::after {
     transform: scale(1.1);
 }
 
-/* Specific colors for different social media platforms */
 .link a:nth-child(2):hover {
-    background-color: #070707;
-    border-color: #500202;
+    background-color: #fc0505;
+    border-color: #0f0f0f;
 }
 
 .link a:nth-child(3):hover {
@@ -396,6 +395,6 @@ ul li a:active::after {
 }
 
 .link a:nth-child(4):hover {
-    background-color: #dc076a;
+    background-color: #701179;
     border-color: #151616;
 }
